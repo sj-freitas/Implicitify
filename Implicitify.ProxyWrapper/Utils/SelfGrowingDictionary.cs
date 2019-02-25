@@ -3,15 +3,13 @@ using System.Collections.Generic;
 
 namespace Implicitify.ProxyWrapper.Utils
 {
-    public static class Extensions
-    {
-        public static IIndexedGetter<TKey, TValue> ToSelfGrowing<TKey, TValue>(
-            this IDictionary<TKey, TValue> dictionary, Func<TKey, TValue> getValueFromKey)
-        {
-            return new SelfGrowingDictionary<TKey, TValue>(dictionary, getValueFromKey);
-        }
-    }
-
+    /// <summary>
+    /// An IndexGetter that automatically generates a value derrived from the
+    /// key when it's not present. The getValueFromKey function will supply
+    /// the derrived value from the key.
+    /// </summary>
+    /// <typeparam name="TKey">The key type.</typeparam>
+    /// <typeparam name="TValue">The value type.</typeparam>
     public class SelfGrowingDictionary<TKey, TValue> : IIndexedGetter<TKey, TValue>
     {
         private readonly IDictionary<TKey, TValue> _dictionary;

@@ -8,17 +8,6 @@ namespace Implicitify.ProxyWrapper.MethodInfoHelpers
     {
         public static string ToStringKey(this MethodInfo methodInfo)
         {
-            if (methodInfo == null)
-            {
-                throw new ArgumentNullException(nameof(methodInfo));
-            }
-
-            return $"{methodInfo.ToStringKeyNameAndParameters()}" +
-                $".[{methodInfo.ReturnType}]";
-        }
-
-        public static string ToStringKeyNameAndParameters(this MethodInfo methodInfo)
-        {
             methodInfo = methodInfo.IsGenericMethod ?
                 methodInfo.GetGenericMethodDefinition() :
                 methodInfo;

@@ -33,9 +33,7 @@ namespace Implicitify.ProxyWrapper.Tests
             // Arrange
             var interceptor = new ProxyGenerator();
             var toWrap = new ImplicitImplementationOfSomeInterface();
-            var wrapped = interceptor
-                .For<ISomeInterface>()
-                .Wrap(toWrap);
+            var wrapped = toWrap.As<ISomeInterface>(interceptor);
 
             // Act
             var result = wrapped.SomeProperty;
@@ -50,9 +48,7 @@ namespace Implicitify.ProxyWrapper.Tests
             // Arrange
             var interceptor = new ProxyGenerator();
             var toWrap = new ImplicitImplementationOfSomeInterface();
-            var wrapped = interceptor
-                .For<ISomeInterface>()
-                .Wrap(toWrap);
+            var wrapped = toWrap.As<ISomeInterface>(interceptor);
 
             // Act
             var result = wrapped.GetSum(3, 5);
@@ -67,9 +63,7 @@ namespace Implicitify.ProxyWrapper.Tests
             // Arrange
             var interceptor = new ProxyGenerator();
             var toWrap = new ImplicitImplementationOfSomeInterface();
-            var wrapped = interceptor
-                .For<ISomeInterface>()
-                .Wrap(toWrap);
+            var wrapped = toWrap.As<ISomeInterface>(interceptor);
 
             // Act
             var ex = Assert.Throws<NotImplementedException>(() => wrapped.ToValue());

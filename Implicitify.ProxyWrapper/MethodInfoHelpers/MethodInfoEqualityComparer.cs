@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Implicitify.ProxyWrapper.MethodInfoHelpers
 {
-    public class MethodInfoSignatureEqualityComparer : IEqualityComparer<MethodInfo>
+    public class MethodInfoEqualityComparer : IEqualityComparer<MethodInfo>
     {
         public bool Equals(MethodInfo x, MethodInfo y)
         {

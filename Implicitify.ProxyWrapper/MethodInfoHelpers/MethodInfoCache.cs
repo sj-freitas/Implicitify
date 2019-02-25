@@ -1,21 +1,16 @@
-﻿using System;
+﻿using Implicitify.ProxyWrapper.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
 namespace Implicitify.ProxyWrapper.MethodInfoHelpers
 {
-    public static class MethodInfoCache<T>
-    {
-        public static readonly IEqualityComparer<MethodInfo> _equalityComparer =
-            new MethodInfoSignatureEqualityComparer();
-
-        public static IDictionary<MethodInfo, MethodInfo> Methods =
-            MethodInfoCacheHelper.CreateMethodsCache(typeof(T), _equalityComparer);
-    }
-
     public static class MethodInfoCacheHelper
     {
+        /// <summary>
+        /// Caches a method info of a specific type from an equality comparer.
+        /// </summary>
         public static IDictionary<MethodInfo, MethodInfo> CreateMethodsCache(
             Type type, IEqualityComparer<MethodInfo> equalityComparer)
         {
@@ -27,6 +22,13 @@ namespace Implicitify.ProxyWrapper.MethodInfoHelpers
             return type
                 .GetMethods()
                 .ToDictionary(t => t, equalityComparer);
+        }
+
+        public static IIndexedGetter<Type, IDictionary<MethodInfo, MethodInfo>> CreateCache(
+            IEqualityComparer<MethodInfo> compareMethodInfo)
+        {
+            return new Dictionary<Type, IDictionary<MethodInfo, MethodInfo>>()
+                .ToSelfGrowing((type) => CreateMethodsCache(type, compareMethodInfo));
         }
     }
 }
