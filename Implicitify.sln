@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Implicitify.ProxyWrapper", "Implicitify.ProxyWrapper\Implicitify.ProxyWrapper.csproj", "{117AC94E-65FB-42E1-A0DA-BD27173B5C1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Implicitify.ProxyWrapper.Tests", "Implicitify.ProxyWrapper.Tests\Implicitify.ProxyWrapper.Tests.csproj", "{9BC8277E-BF79-444B-83A4-366996C3A71A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{117AC94E-65FB-42E1-A0DA-BD27173B5C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117AC94E-65FB-42E1-A0DA-BD27173B5C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117AC94E-65FB-42E1-A0DA-BD27173B5C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117AC94E-65FB-42E1-A0DA-BD27173B5C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC8277E-BF79-444B-83A4-366996C3A71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC8277E-BF79-444B-83A4-366996C3A71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC8277E-BF79-444B-83A4-366996C3A71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC8277E-BF79-444B-83A4-366996C3A71A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01DE0816-4E75-450F-9BAF-21DE66A7C149}
+	EndGlobalSection
+EndGlobal
