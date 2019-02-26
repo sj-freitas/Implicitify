@@ -2,7 +2,7 @@ using Castle.DynamicProxy;
 using System;
 using Xunit;
 
-namespace Implicitify.ProxyWrapper.Tests
+namespace Implicitify.Tests
 {
     public class InstanceWrapper
     {
@@ -71,7 +71,7 @@ namespace Implicitify.ProxyWrapper.Tests
             // Assert
             Assert.Equal(
                 "System.String ToValue() is not implemented " +
-                "by Implicitify.ProxyWrapper.Tests.InstanceWrapper+ImplicitImplemen" +
+                "by Implicitify.Tests.InstanceWrapper+ImplicitImplemen" +
                 "tationOfSomeInterface!", ex.Message);
         }
     }

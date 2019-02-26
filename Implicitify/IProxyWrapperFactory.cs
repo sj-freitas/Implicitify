@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Implicitify.ProxyWrapper
+namespace Implicitify
 {
     public interface IProxyWrapperFactory<TInterface> where TInterface : class
     {

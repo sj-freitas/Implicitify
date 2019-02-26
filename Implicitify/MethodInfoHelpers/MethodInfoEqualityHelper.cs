@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace Implicitify.ProxyWrapper.MethodInfoHelpers
+namespace Implicitify.MethodInfoHelpers
 {
     public static class MethodInfoEqualityHelper
     {

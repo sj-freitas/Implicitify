@@ -1,7 +1,7 @@
 ﻿using Castle.DynamicProxy;
 using System;
 
-namespace Implicitify.ProxyWrapper
+namespace Implicitify
 {
     public static class Extensions
     {

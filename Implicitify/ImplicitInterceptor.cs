@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Implicitify.ProxyWrapper
+namespace Implicitify
 {
     /// <summary>
     /// An implicit interceptor that uses recursivity to navigate through

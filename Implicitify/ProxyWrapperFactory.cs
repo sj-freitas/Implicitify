@@ -1,11 +1,11 @@
 ﻿using Castle.DynamicProxy;
-using Implicitify.ProxyWrapper.MethodInfoHelpers;
-using Implicitify.ProxyWrapper.Utils;
+using Implicitify.MethodInfoHelpers;
+using Implicitify.Utils;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Implicitify.ProxyWrapper
+namespace Implicitify
 {
     public class ProxyWrapperFactory : IProxyWrapperFactory
     {

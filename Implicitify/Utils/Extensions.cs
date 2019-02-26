@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Implicitify.ProxyWrapper.Utils
+namespace Implicitify.Utils
 {
     public static class Extensions
     {

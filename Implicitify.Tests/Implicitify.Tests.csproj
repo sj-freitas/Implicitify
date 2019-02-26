@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Implicitify.ProxyWrapper\Implicitify.ProxyWrapper.csproj" />
+    <ProjectReference Include="..\Implicitify\Implicitify.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Implicitify.ProxyWrapper.Utils
+namespace Implicitify.Utils
 {
     /// <summary>
     /// An IndexGetter that automatically generates a value derrived from the

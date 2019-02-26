@@ -1,4 +1,4 @@
-﻿namespace Implicitify.ProxyWrapper.Utils
+﻿namespace Implicitify.Utils
 {
     public interface IIndexedGetter<TKey, TValue>
     {

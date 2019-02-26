@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Implicitify.ProxyWrapper.Tests
+namespace Implicitify.Tests
 {
     public class DynamicImplicitInterceptor
     {
