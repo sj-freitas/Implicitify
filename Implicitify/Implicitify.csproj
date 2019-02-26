@@ -8,12 +8,13 @@
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>implicit interface proxy</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Copyright>2019</Copyright>
     <Description>Make any class implement any interface without changing it. Allows for abstractions over any class as long as it has methods with the same signatures as the interface.</Description>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
