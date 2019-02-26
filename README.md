@@ -16,13 +16,13 @@ public static class Program
     {
         // DirectoryInfo is a System.IO class, it does not implement
         // any interface, however, it would be nice to abstract it.
-        var test = new System.IO.DirectoryInfo(@"C:\Hello World\");
+        var directory = new System.IO.DirectoryInfo(@"C:\Hello World\");
 
         // Wrapped is an IDirectoryInfo implementation!
-        var wrapped = test.As<IDirectoryInfo>();
+        var wrapped = directory.As<IDirectoryInfo>();
 
         // Will "Hello World"
-        Console.WriteLine(directory.Name);
+        Console.WriteLine(wrapped.Name);
     }
 }
 ```
